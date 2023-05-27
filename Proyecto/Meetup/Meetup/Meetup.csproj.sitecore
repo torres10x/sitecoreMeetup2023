@@ -1,0 +1,41 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="https://meetupsc.dev.local/" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <File Include="Views\Layout\Structure.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/Layout/Structure.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{2C349DF2-613D-40A4-9823-EBD1D4DAD444}</Item>
+  </File>
+  <File Include="Views\Events\EventLayout\FeaturedEvent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{1A95BFEA-D59F-423B-8045-0FA462F3879B}</Item>
+  </File>
+  <File Include="Views\Events\EventLayout\FeatureRow.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{6A3DF6DF-3803-4C4B-ACBA-D034D3890A37}</Item>
+  </File>
+  <File Include="Views\Events\EventLayout\HomeContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{7203CBCF-8351-482D-A015-175936BFA9CA}</Item>
+  </File>
+  <File Include="Views\Events\EventLayout\OneColumn.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{0B511129-1A96-4015-A593-04313560A255}</Item>
+  </File>
+  <File Include="Views\Events\EventLayout\PageContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{A357B766-6BDB-4D06-A9F4-92F563EC5662}</Item>
+  </File>
+  <File Include="Views\Events\EventLayout\SideContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{F1BE47F0-6F2C-467E-86F6-B6BD4ED74E97}</Item>
+  </File>
+  <File Include="Views\Events\EventLayout\two-ColumsLeft.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{D13BDD1A-4A72-415F-A5AE-585378169AC3}</Item>
+  </File>
+  <File Include="Views\Events\EventLayout\twoColumns.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{537F31F5-B574-48CA-8B30-C606860FB364}</Item>
+  </File>
+  <File Include="Views\Layout\Events.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/Layout/Events.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{8F9976E9-C714-4949-8E34-ED3CDC8B96B7}</Item>
+  </File>
+  <File Include="Views\Shared\MyViewLayout1.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/Shared/MyViewLayout1.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="web">{FE86C9A2-19AF-4C04-8F73-E6A372F839EA}</Item>
+  </File>
+</Project>

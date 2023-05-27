@@ -1,0 +1,20 @@
+﻿@model Meetup.Models.Navigation.BreadcrumbBuilder
+
+
+<header class="page-header">
+    <div class="container">
+        <!-- [Breadcrumb Navigation] -->
+       
+<ol class="breadcrumb">
+    @foreach (var x in Model.Breadcrumb)
+    {
+
+
+        <li class="@(x.Active? "active": string.Empty)">
+            <a href="@x.Url">@x.Title</a>
+        </li>
+    }
+</ol>
+      
+    </div>
+</header>

@@ -1,0 +1,23 @@
+﻿@model List<Meetup.Models.Navigation.SideMenu>
+
+<h4><a href="Event-Categories.html">Events</a></h4>
+<div class="sidebar sidebar-static">
+
+    <ul class="nav nav-pills nav-stacked">
+
+        @foreach (var item in Model)
+        {
+
+            <li class="@(item.Node.Active? "open":null)">
+
+                <a href="@item.Node.Url">@item.Node.Title</a>
+                @foreach (var itemnav in item.Breadcrumb)
+                {
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="@itemnav.Url">@itemnav.Title</a></li>
+                    </ul>
+                }
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,25 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+    var url = Sitecore.Links.LinkManager.GetItemUrl(Model.Item);
+    var css = @Model.Rendering.Parameters;
+}
+
+    <div class="thumbnail well @Model.Rendering.Parameters["CssClass"]">
+        @*<a href="Event-Detail.html">*@
+        <a href="@url">
+
+            @Html.Sitecore().Field("EventImage", new { @class = "image-responsive", mw = 500, mh = 333 })
+            @*<img src="/Images/Rock-Climbing-in-the-Czech-Republic.jpg" class="img-responsive" alt="Rock Climbing in the Czech Republic" width="500" height="333" />*@
+        </a>
+        <p>ghfhfghgfhgf</p>
+        <div class="caption">
+            <h3 class="teaser-heading">@Html.Sitecore().Field("ContentHeading")</h3>
+            <p>
+                @*  This two-day tour begins with a stay at the ancient Karlštejn Castle established by Roman Emperor Charles IV to store crowned jewels and holy relics. After our castle stay, we will move on to Cesky Raj, whose translates into Bohemian Paradise, the oldest nature reserve in the Czech Republic.*@
+                @Html.Sitecore().Field("ContentIntro")
+            </p>
+            <a href="Event-Detail.html" class="btn btn-default">Read more</a>
+        </div>
+    </div>

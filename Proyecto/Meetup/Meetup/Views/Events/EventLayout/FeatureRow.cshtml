@@ -1,0 +1,65 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+
+@* StaticPlaceholder *@
+<div class="row">
+
+
+    <div class="col-sm-4">
+        @Html.Sitecore().Placeholder("feature-left")
+
+    </div>
+    <div class="col-sm-4">
+        @Html.Sitecore().Placeholder("feature-middle")
+
+    </div>
+
+    <div class="col-sm-4">
+        @Html.Sitecore().Placeholder("feature-right")
+
+    </div>
+
+</div>
+@*************************-----------------*@
+
+@*@functions{
+    TagBuilder CreateDivWrap()
+    {
+        var tagBuilder = new TagBuilder("div");
+        tagBuilder.AddCssClass("col-sm-4");
+        return tagBuilder;
+    }
+
+}
+
+<div class="row">
+    @Html.Sitecore().DynamicPlaceholder("feature_spot", CreateDivWrap(), 3)
+</div>*@
+
+
+@*************************-----------------*@
+
+
+
+
+ @*@functions{
+        TagBuilder CreateDivWrap(DynamicPlaceholderRenderContext context)
+        {
+            var tagBuilder = new TagBuilder("div");
+            int[] widths = new int[] { 0, 12, 6, 4, 3 };
+            tagBuilder.AddCssClass("col-sm-" + widths[context.PlaceholdersCount]);
+            return tagBuilder;
+        }
+    }
+       
+
+    <div class="row">
+
+        @Html.Sitecore().DynamicPlaceholder("feature_spot", CreateDivWrap, 3)
+        
+
+    </div>*@
